@@ -11,3 +11,37 @@
   $color-main: #0075ff;
   // $color-main: #a200ff;
   $color-footer: #f4f8fe;
+
+  .btn-main {
+    @include btn-base();
+    background-color: $color-main;
+    color: white;
+    border: solid 1px $color-main;
+  
+    &:hover {
+      background-color: white;
+      color: $color-main;
+      border: solid 1px $color-main;
+    }
+  
+    &-s {
+      @extend .btn-main;
+      @include btn-sm-modify();
+    }
+  }
+  
+  .btn-sec {
+    @include btn-base();
+    color: black;
+    background-color: transparent;
+    border: none;
+  
+    &:hover {
+      color: #888;
+    }
+  
+    &-s {
+      @extend .btn-sec;
+      @include btn-sm-modify();
+    }
+  }
