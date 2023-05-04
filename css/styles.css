@@ -30,4 +30,21 @@
   padding: 0.1rem 1rem;
 }
 
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.75rem;
+  list-style: none;
+  display: inline;
+  margin-right: 2rem;
+}
+.main-menu li a {
+  color: #000;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */
